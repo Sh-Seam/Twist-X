@@ -252,18 +252,25 @@
   position: relative;
   width: 200px;
   height: 200px;
-  left: 100px;
+  left: 50px;
   top: 50px;
 }
 .hello{
   position: relative;
-  left: 350px;
-  top: -150px;
+  left: 35px;
+  top: 55px;
   font-size: 20px;
+}
+.marj{
+  position: relative;
+  left: 3px;
+  top: -95px;
+  font-size: 20px;
+
 }
 .gif{
   position: relative;
-  left: 400px;
-  top: -110px;
+  left: 100px;
+  top: -20px;
   width: 120px;
 }
