@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html> 
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Apply For Creating Website </title>
+<script src="koi.js" defer></script>
+<style> 
+Body {
+  font-family: Calibri, Helvetica, sans-serif;
+  background-color: #E6E6FA;
+  
+
+}
+button { 
+       background-color: #4CAF50; 
+       width: 100%;
+        color: rgb(0, 0, 0); 
+        padding: 15px; 
+        margin: 10px 0x; 
+        border: none; 
+        cursor: pointer; 
+       font-size: 20px;
+       
+    } 
+ form { 
+        width: 100%;  
+        height: 100%;
+        border: 3px solid #f1f1f1; 
+    } 
+ input[type=text], input[type=password] { 
+        width: 100%; 
+        margin: 8px 0;
+        padding: 12px 20px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+    }
+
+#msg{
+    width: 100%; 
+        margin: 8px 0;
+        padding: 37px; 
+        display: inline-block; 
+        border: 2px solid green; 
+        box-sizing: border-box; 
+}
+
+ button:hover { 
+        opacity: 0.7; 
+    } 
+  .cancelbtn { 
+        width: auto; 
+        padding: 10px 18px;
+        margin: 10px 5px;
+    } 
+      
+   
+ .container { 
+        padding: 25px; 
+        
+        background-color: lightblue;
+    } 
+ .home{
+    position:relative;
+    color: black;
+    background-color: green;
+    left: 46%;
+    padding: 10px;
+    top: 55px;
+    
+  
+}
+a:hover{
+    opacity: 0.7;
+}
+.make{position: relative;
+    top: 30px;
+}
+
+</style> 
+</head>  
+<body> 
+    <center><h2 class="make">Apply to Make Website</h2> <br><h1> Apply Form </h1> </center> 
+    <form action="https://sheetdb.io/api/v1/mnl733k976rmt" method="post" id="sheetdb-form"  >
+        <div class="container">
+            
+            <label>Frist Name : </label>
+            <input type="text" placeholder="Enter Frist Name" name="data[fristname]" required>
+            <label>Last Name : </label> 
+            <input type="text" placeholder="Enter Last Name" name="data[lastname]" required>
+            <label>Username : </label> 
+            <input type="text" placeholder="Enter Username" name="data[username]" required>
+            <label>Email : </label> 
+            <input type="text" placeholder="Enter Email Address" name="data[email]" required>
+            <label>Phone : </label> 
+            <input type="text" placeholder="Enter Phone Number" name="data[phone]" required>
+            <label>What type of Website tou want to make : </label> 
+            <input type="text" placeholder="Enter Website Link" name="data[web]" required>
+            <label>Meassage : </label> 
+            <textarea type="text" placeholder="Enter Your Meassage!!!" name="data[msg]" id="msg" required></textarea>
+           
+            <button type="submit" name="sub"><a class="aa"><b>Login</b></a></button> 
+            <!-- <input type="checkbox" checked="checked"> Remember me 
+            <button type="button" class="cancelbtn"> Cancel</button> 
+            Forgot <a href="#"> password? </a>  -->
+
+            <a href="Bar.html" class="home"><span><b>Back to home</b></span></a>
+
+        </div> 
+    </form>  
+    <script>
+        var form = document.getElementById('sheetdb-form');
+    form.addEventListener("submit", e => {
+      e.preventDefault();
+      fetch(form.action, {
+          method : "POST",
+          body: new FormData(document.getElementById("sheetdb-form")),
+      }).then(
+          response => response.json()
+      ).then((html) => {
+        // you can put any JS code here
+        window.open("sucess.html", '_self');
+
+      });
+    }
+    
+    
+    
+    );
+
+
+
+
+    </script>
+     
+</body>   
+</html>

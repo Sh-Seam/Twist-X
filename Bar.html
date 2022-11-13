@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>𝙏𝙬𝙞𝙨𝙩 𝑿 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕 </title>
+    <meta charset="UTF-8">
+    <!--<title> Responsive Sidebar Menu</title>-->
+    <link rel="stylesheet" href="CSS/Bar.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+      <i class='bx bxl-c-plus-plus icon'></i>
+      
+        <div class="logo_name">𝙏𝙬𝙞𝙨𝙩 𝑿 - 𝙾𝚏𝚏𝚒𝚌𝚒𝚊𝚕</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <!-- <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li> -->
+      <li>
+        <a href="Bar.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+       <a href="https://www.facebook.com/twistX.official">
+        <i class='bx bxl-facebook-square'></i>
+         <span class="links_name">Facebook</span>
+       </a>
+       <span class="tooltip">Facebook</span>
+     </li>
+     <li>
+       <a href="https://www.youtube.com/channel/UClg7-r7j1OMXsI-Aw0JNEtw">
+        <i class='bx bxl-youtube'></i>
+         <span class="links_name">Youtube</span>
+       </a>
+       <span class="tooltip">Youtube</span>
+     </li>
+     <li>
+       <a href="https://m.me/twistX.official">
+        <i class='bx bxl-messenger' ></i>
+         <span class="links_name">Messenger</span>
+       </a>
+       <span class="tooltip">Messenger</span>
+     </li>
+     <li>
+       <a href="https://chat.whatsapp.com/G27GqrQZiBbGrfj6BHDsBi">
+        <i class='bx bxl-whatsapp' ></i>
+         <span class="links_name">WhatsApp</span>
+       </a>
+       <span class="tooltip">WhatsApp</span>
+     </li>
+     <li>
+       <a href="https://t.me/TwistXGaming">
+        <i class='bx bxl-telegram' ></i>
+         <span class="links_name">Telegram</span>
+       </a>
+       <span class="tooltip">Telegram</span>
+     </li>
+     <li>
+       <a href="Create web.html">
+        <i class='bx bxs-cart-add'></i>
+         <span class="links_name">Create Website</span>
+       </a>
+       <span class="tooltip">Create Website</span>
+     </li>
+     <li>
+       <a href="koi.html">
+        <i class='bx bx-user-pin' ></i>
+         <span class="links_name">Animation</span>
+       </a>
+       <span class="tooltip">Animation</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           <img src="File/ee.jpg" alt="profileImg">
+           <div class="name_job">
+             <div class="name">MD Seam</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  <section class="home-section">
+      <div class="text">Dashboard</div><br>
+      <img src="File/aa.png" alt="TwistXGaming" srcset="" class="picc"><p class="hello">
+    <ins><b>My Name is :</b></ins> <i><b><mark>MD Seam</mark></b></i>
+    <br><b>This my personal Website .</b>
+    <br><br><br><br><br><br><b><mark> After few days i am upload my full bio</mark></b>
+
+      </p>
+      <img src="File/gif.gif" alt="Loading" class="gif">
+  </section>
+  
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>
